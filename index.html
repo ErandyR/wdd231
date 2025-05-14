@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>Erandy Ramirez WDD 231</title>
+    <meta name="description" content="Erandy's BYU-Idaho WDD231 home page.">
+    <meta name="author" content="Erandy Ramirez">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/course.js"></script>
 </head>
 
 <body>
-    <h1>WDD 231 - Erandy Ramirez</h1>
+    <header>
+        <div class="profile-name flex secondary-color">
+            <img class="profileImg" src="images/profile_picture.webp" alt="Erandy Ramirez" width="200">
+            <span>Erandy Ramirez</span>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="flex navigation">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="index.html" target="_blank">Chamber</a></li>
+                <li><a href="index.html" target="_blank">Final</a></li>
+                <li><a href="index.html" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/erandyr/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="h1">Home</h1>
+        <div class="section-container">
+            <div class="section-box">
+                <section class="section-block">
+                    <h2 class="secondary-color">Course Work</h2>
+                    <div></div>
+                </section>
+                <section class="section-block">
+                    <h2 class="secondary-color">Tlaxcala, Mexico</h2>
+                    <div>
+                        <img class="guelaguetzaImg" src="images/guelaguetza.webp" alt="Guelaguetza, Mexico">
+                        <p>Guelaguetza</p>
+                    </div>
+                </section>
+            </div>
+            <div class="section-box">
+                <section class="section-block2">
+                    <h2 class="secondary-color">Web and Computer Programming Certificate</h2>
+                    <div class="div-container-certificates">
+                        <div class="div-selection">
+                            <p id="all-section" class="item p-selection div-selection-p active">All</p>
+                            <p id="cse-section" class="item p-selection div-selection-p">CSE</p>
+                            <p id="wdd-section" class="item p-selection div-selection-p">WDD</p>
+                        </div>
+                        <div id="wdd-container" class="div-certificates activeSection">
+                            <span id="wdd130" class="course-done">WDD130</span>
+                            <span id="wdd131" class="course-done">WDD131</span>
+                            <span id="wdd231">WDD231</span>
+                        </div>
+                        <div id="cse-container" class="div-certificates activeSection">
+                            <span id="cse110" class="course-done">CSE110</span>
+                            <span id="cse111" class="course-done">CSE111</span>
+                            <span id="cse210">CSE210</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer secondary-color">
+        <p>©️<span id="currentyear"></span> Erandy Ramirez. Tlaxcala, Mexico.</p>
+        <p>Last Modified:<span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
