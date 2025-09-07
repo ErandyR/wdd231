@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Special+Elite&display=swap');
-
-
 :root {
-    --primary-color: #443650;
-    --secondary-color: #a7a989;
-    --accent1-color: #BA73FA;
+    --primary-color: #1F3C88;
+    --secondary-color: #F4F4F4;
+    --accent1-color: #F2B632;
     --accent2-color: #f7ff9a;
+    --text: #333333;
 
-    --heading-font: "Special Elite", system-ui;
-    --paragraph-font: "Funnel Display", sans-serif;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
 
-    --nav-background-color: #201429;
-    --nav-link-color: #b892db;
-    --nav-hover-link-color: #b4b499;
-    --nav-hover-background-color: #4b4c42;
+    --nav-background-color: #1b2c57;
+    --nav-link-color: #F4F4F4;
+    --nav-hover-link-color: #1b2c57;
+    --nav-hover-background-color: #c2c2c2d7;
 }
 
 
@@ -22,8 +20,12 @@ body {
     max-width: 100%;
     padding: 0;
     margin: 0 auto;
+    color: var(--text);
 }
 
+h1 {
+    font-size: 2rem;
+}
 
 h1,
 h2,
@@ -64,8 +66,7 @@ footer {
 }
 
 .logoImg {
-    margin: 0 1rem 0 1rem;
-    max-width: 7rem;
+    max-width: 9rem;
     height: auto;
 }
 
@@ -76,9 +77,11 @@ footer {
 
 .hamburger {
     display: none;
-    font-size: 26px;
+    font-size: 1.5rem;
+    border: none;
+    color: var(--primary-color);
     cursor: pointer;
-    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navigation li {
@@ -101,7 +104,7 @@ footer {
     text-decoration: none;
 }
 
-.profile-name {
+.profile-logo {
     justify-content: space-evenly;
     align-items: center;
     font-size: 2em;
@@ -109,13 +112,20 @@ footer {
     padding: 10px 0;
 }
 
-.profile-name img {
-    border-radius: 10%;
-    box-shadow: 0 0 30px rgb(67, 67, 67);
+.profile-picture {
+    width: 20vw;
+    height: auto;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
-.h1 {
-    margin-left: 1rem;
+.about-me {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.h2 {
+    margin: 2rem;
 }
 
 .section-container {
@@ -133,17 +143,17 @@ footer {
     flex: 1;
     padding: 20px;
     text-align: center;
-    border-radius: 2px;
-    border: 1px solid var(--nav-background-color);
+    border: 1px solid var(--primary-color);
     margin: 0 2rem;
+    border-radius: 5px;
 }
 
 .section-block2 {
     flex: 1 0 90%;
     padding: 20px;
     text-align: center;
-    border-radius: 2px;
-    border: 1px solid var(--nav-background-color);
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
     margin: 0 2rem 2rem 2rem;
 }
 
@@ -160,7 +170,6 @@ footer {
     text-align: center;
 }
 
-
 .active {
     border: 2px solid var(--nav-link-color);
     color: var(--nav-link-color);
@@ -171,7 +180,7 @@ footer {
 
 .div-selection-p {
     border: 2px solid var(--primary-color);
-    margin: 0 1rem;
+    margin: 5px 1rem;
     padding: 5px 0;
     border-radius: 3px;
 }
@@ -181,6 +190,8 @@ footer {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
     font-weight: 700;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
 }
 
 .p-selection {
@@ -205,7 +216,7 @@ footer {
     width: 15vw;
     border: 2px solid var(--primary-color);
     margin: 1rem 0;
-    padding: 5px 0;
+    padding: 10px 0;
     border-radius: 3px;
 }
 
@@ -213,15 +224,29 @@ footer {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
     font-weight: 700;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
 }
 
 .secondary-color {
     background-color: var(--secondary-color);
     padding: 15px 0;
+    border-radius: 5px;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.footer-icons a {
+    color: var(--primary-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-icons a:hover {
+    color: var(--accent1-color);
 }
