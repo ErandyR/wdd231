@@ -81,6 +81,8 @@ const courses = [
 
 const items = document.querySelectorAll('.item');
 
+const total = document.getElementById('totalCourses');
+total.innerHTML = 6;
 
 items.forEach(item => {
     item.addEventListener('click', () => {
@@ -90,15 +92,19 @@ items.forEach(item => {
         const itemAll = document.getElementById('all-section');
         const itemWdd = document.getElementById('wdd-section');
         const itemCse = document.getElementById('cse-section');
+        total.innerHTML = "";
         if (item == itemAll) {
             document.querySelector('#wdd-container').classList.add('activeSection');
             document.querySelector('#cse-container').classList.add('activeSection');
+            total.innerHTML = 6;
         } else if (item == itemWdd) {
             document.querySelector('#wdd-container').classList.add('activeSection');
             document.querySelector('#cse-container').classList.remove('activeSection');
+            total.innerHTML = 3;
         } else if (item == itemCse) {
             document.querySelector('#cse-container').classList.add('activeSection');
             document.querySelector('#wdd-container').classList.remove('activeSection');
+            total.innerHTML = 3;
         }
     })
 })

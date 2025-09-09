@@ -7,6 +7,8 @@
     <title>Xicotes Local Leaders</title>
     <meta name="description" content="Erandy's BYU-Idaho WDD231 home page.">
     <meta name="author" content="Erandy Ramirez">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap"
@@ -29,9 +31,9 @@
         </div>
         <nav>
             <ul id="nav-bar" class="flex navigation">
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="index.html" target="_blank">Chamber Project</a></li>
-                <li><a href="index.html" target="_blank">Final Project</a></li>
+                <li class="currentNav"><a href="index.html" target="_blank">Home</a></li>
+                <li><a>Chamber Project</a></li>
+                <li><a>Final Project</a></li>
             </ul>
         </nav>
     </header>
@@ -64,6 +66,9 @@
                             <p id="all-section" class="item p-selection div-selection-p active">All</p>
                             <p id="cse-section" class="item p-selection div-selection-p">CSE</p>
                             <p id="wdd-section" class="item p-selection div-selection-p">WDD</p>
+                        </div>
+                        <div>
+                            <p>The total number of course listed below is: <span id="totalCourses"></span></p>
                         </div>
                         <div id="wdd-container" class="div-certificates activeSection">
                             <span id="wdd130" class="course-done course">WDD130</span>

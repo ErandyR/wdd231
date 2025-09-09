@@ -104,6 +104,13 @@ footer {
     text-decoration: none;
 }
 
+.currentNav a {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    font-weight: 700;
+    text-decoration: none;  
+}
+
 .profile-logo {
     justify-content: space-evenly;
     align-items: center;
