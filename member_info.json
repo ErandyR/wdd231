@@ -1,0 +1,23 @@
+{
+    "family_name": "Vazquez",
+    "move_in_date": "15/11/2024",
+    "family_members": 3,
+    "visited_by_bishopric": true,
+    "individualFamilyMember": [
+        {
+            "name": "Juan Vazquez",
+            "gender": "Male",
+            "dOB": "13-05-1980"
+        },
+        {
+            "name": "Maria Vazquez",
+            "gender": "Female",
+            "dOB": "12-03-1983"
+        },
+        {
+            "name": "Jose Vazquez",
+            "gender": "Male",
+            "dOB": "20-10-2010"
+        }
+    ]
+}
