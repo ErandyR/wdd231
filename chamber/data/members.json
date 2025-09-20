@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Artesanías Xicohtzinco",
+        "address": "Calle Hidalgo #12, Barrio San Antonio, Xicohtzinco, Tlaxcala, México",
+        "phone": "+52 (246) 123-4567",
+        "website": "https://www.artesaniasxicohtzinco.mx",
+        "imageurl": "https://github.com/ErandyR/wdd231/chamber/images/artesanias.webp",
+        "membershipLevel": 3,
+        "industry": "Artesanías y souvenirs",
+        "founded": 2005
+    },
+    {
+        "name": "Panadería La Espiga",
+        "address": "Av. Benito Juárez #45, Centro, Xicohtzinco, Tlaxcala, México",
+        "phone": "+52 (246) 234-5678",
+        "website": "https://www.panaderialaespiga.mx",
+        "imageurl": "https://github.com/ErandyR/wdd231/chamber/images/panaderia.webp",
+        "membershipLevel": 1,
+        "industry": "Panadería y repostería",
+        "founded": 1998
+    },
+    {
+        "name": "Restaurante El Sazón Tlaxcalteca",
+        "address": "Calle Reforma #8, Barrio La Candelaria, Xicohtzinco, Tlaxcala, México",
+        "phone": "+52 (246) 345-6789",
+        "website": "https://www.elsazontlaxcalteca.mx",
+        "imageurl": "https://github.com/ErandyR/wdd231/chamber/images/restaurante.webp",
+        "membershipLevel": 2,
+        "industry": "Restaurantes",
+        "founded": 2012
+    },
+    {
+        "name": "Hotel Casa Xicohtzinco",
+        "address": "Calle Morelos #25, Barrio San Juan, Xicohtzinco, Tlaxcala, México",
+        "phone": "+52 (246) 456-7890",
+        "website": "https://www.casaxicohtzinco.mx",
+        "imageurl": "https://github.com/ErandyR/wdd231/chamber/images/hotel.webp",
+        "membershipLevel": 3,
+        "industry": "Hotelería",
+        "founded": 2017
+    },
+    {
+        "name": "Taller Automotriz El Ángel",
+        "address": "Carretera Federal Puebla-Tlaxcala Km 18, Xicohtzinco, Tlaxcala, México",
+        "phone": "+52 (246) 567-8901",
+        "website": "https://www.tallerelangel.mx",
+        "imageurl": "https://github.com/ErandyR/wdd231/chamber/images/mecanico.webp",
+        "membershipLevel": 1,
+        "industry": "Servicios automotrices",
+        "founded": 2010
+    },
+    {
+        "name": "Farmacia Vida Sana",
+        "address": "Calle Zaragoza #32, Centro, Xicohtzinco, Tlaxcala, México",
+        "phone": "+52 (246) 678-9012",
+        "website": "https://www.farmaciavidasana.mx",
+        "imageurl": "https://github.com/ErandyR/wdd231/chamber/images/farmacia.webp",
+        "membershipLevel": 2,
+        "industry": "Farmacias",
+        "founded": 2008
+    },
+    {
+        "name": "Cafetería El Colibrí",
+        "address": "Plaza Principal #1, Xicohtzinco, Tlaxcala, México",
+        "phone": "+52 (246) 789-0123",
+        "website": "https://www.elcolibri.mx",
+        "imageurl": "https://github.com/ErandyR/wdd231/chamber/images/cafe.webp",
+        "membershipLevel": 3,
+        "industry": "Cafeterías",
+        "founded": 2019
+    }
+]
