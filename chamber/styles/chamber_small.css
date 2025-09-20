@@ -55,6 +55,9 @@ nav ul {
 
 
 /*Class Selectors*/
+.membersH1 {
+    justify-self: center;
+}
 
 .logoImg {
     width: 7rem;
@@ -75,10 +78,12 @@ nav ul {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar h1 {
+.navbar p {
     margin: 1rem;
     font-size: 1rem;
     align-self: center;
+    color: var(--nav-background-color);
+    font-weight: 500;
 }
 
 .navbar nav {
