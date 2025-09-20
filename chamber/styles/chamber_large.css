@@ -36,11 +36,13 @@
     }
 
     .grid-images {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .member-img {
         width: 100%;
+        height: 200px;
     }
 
 
@@ -68,6 +70,8 @@
         margin-right: 6rem;
     }
 
+
+
     .card {
         background-color: #726c722a;
         padding: 1rem 1rem;
@@ -77,13 +81,15 @@
 
     .grid-images {
         display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
+
     }
 
     .member-img {
         width: 100%;
+        height: 250px;
     }
 
     .footer {

@@ -1,4 +1,4 @@
-const url = 'https://github.com/ErandyR/wdd231/chamber/data/members.json';
+const url = 'data/members.json';
 
 const cards = document.querySelector("#cards");
 
@@ -11,17 +11,19 @@ async function getMemberData() {
 
 getMemberData();
 
-const displayMemberss = (members) => {
+const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('section');
-        let name = document.createElement('h2');
+        let name = document.createElement('h4');
         let portrait = document.createElement('img');
+        let website = document.createElement('p');
         let address = document.createElement('p');
         let phone = document.createElement('p');
 
         name.textContent = `${member.name}`;
-        address.textContent = `Address: ${member.address}`
-        phone.textContent = `Phone: ${member.phone}`
+        website.textContent = `${member.website}`
+        address.textContent = `${member.address}`
+        phone.textContent = `${member.phone}`
 
         portrait.setAttribute('src', member.imageurl);
         portrait.setAttribute('alt', `Portrait of ${member.name}`);
@@ -31,6 +33,7 @@ const displayMemberss = (members) => {
 
 
         card.appendChild(name);
+        card.appendChild(website);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(portrait);
