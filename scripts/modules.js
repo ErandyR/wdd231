@@ -1,6 +1,6 @@
-import byuiCourse from './course';
-import { setSectionSelection } from '/sections';
-import { setTitle, renderSections } from "/output";
+import byuiCourse from './course.mjs';
+import { setSectionSelection } from './sections.mjs';
+import { setTitle, renderSections } from "./outpout.mjs";
 
 document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = Number(document.querySelector("#sectionNumber").value);
