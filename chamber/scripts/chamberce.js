@@ -1,9 +1,9 @@
-const url = 'data/members.json';
+const urlChambers = 'data/members.json';
 
 const cards = document.querySelector("#cards");
 
 async function getMemberData() {
-    const response = await fetch(url);
+    const response = await fetch(urlChambers);
     const data = await response.json();
     console.table(data);
     displayMembers(data.members);

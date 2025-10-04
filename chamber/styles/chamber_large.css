@@ -35,6 +35,10 @@
         width: 100%;
     }
 
+    .container-hero-image {
+        height: 400px;
+    }
+
     .grid-images {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -70,6 +74,20 @@
         margin-right: 6rem;
     }
 
+    .container-hero-image {
+        height: 600px;
+    }
+
+    .container-hero-image h1 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        padding: 10px 10px;
+    }
 
 
     .card {
