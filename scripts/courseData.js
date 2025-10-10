@@ -78,6 +78,32 @@ const courses = [
     }
 ]
 
+const displayCourses = (courses) => {
+    courses.forEach((course) => {
+        let buttonCourse = document.createElement('span');
+        buttonCourse.innerHTML = course.subject + ' ' + course.number;
+        buttonCourse.setAttribute('class', 'course');
+        if (course.completed) {
+            buttonCourse.classList.add('course-done');
+        }
+        buttonCourse.setAttribute('id', `${course.subject.toLowerCase()}${course.number}`)
+        const wddContainer = document.querySelector("#wdd-container");
+        const cseContainer = document.querySelector("#cse-container");
+        if (course.subject == 'WDD') {
+            wddContainer.appendChild(buttonCourse);
+        } else {
+            cseContainer.appendChild(buttonCourse);
+        }
+
+        buttonCourse.addEventListener('click', () => {
+            displayCourseDetails(course);
+        })
+
+    });
+}
+
+displayCourses(courses);
+
 
 const items = document.querySelectorAll('.item');
 
@@ -106,5 +132,28 @@ items.forEach(item => {
             document.querySelector('#wdd-container').classList.remove('activeSection');
             total.innerHTML = 3;
         }
-    })
+    });
 })
+
+const courseDetails = document.querySelector("#course-details");
+
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById("closeModal");
+    closeModal.addEventListener('click', () => {
+        courseDetails.close();
+    });
+}
+

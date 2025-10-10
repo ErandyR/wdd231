@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Home Page</title>
-    <meta name="description" content="Xicohtzinco, Tlaxcala local leaders chamber of commerce home page">
+    <title>Join Us - Chamber of Commerce</title>
+    <meta name="description" content="Xicohtzinco, Tlaxcala local leaders chamber of commerce, join page">
     <meta name="author" content="Erandy Ramirez">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber_small.css">
     <link rel="stylesheet" href="styles/chamber_large.css">
+    <link rel="stylesheet" href="styles/join.css">
     <meta property="og:title" content="Chamber">
     <meta property="og:description"
         content="Xicohtzinco Tlaxcala chamber of commerce, where all local leaders support one another and support local commerce">
@@ -24,9 +25,8 @@
     <meta property="og:type" content="website">
     <script defer src="scripts/date.js"></script>
     <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/chamberce.js"></script>
-    <script defer src="scripts/weather.js"></script>
-    <!--<script defer src="scripts/weather_overview.js"></script>-->
+    <script defer src="scripts/join.js"></script>
+
 </head>
 
 <body>
@@ -34,11 +34,11 @@
         <div>
             <img class="logoImg" src="images/logo.png" alt="website logo">
         </div>
-        <p>Chamber of Commerce Directory</p>
+        <p>Chamber of Commerce</p>
         <nav>
             <ul id="nav-bar" class="navigation flex">
-                <li class="currentNav"><a href="#">Home</a></li>
-                <li><a href="directory.html" target="_blank">Directory</a></li>
+                <li class="currentNav"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a>Discover</a></li>
             </ul>
@@ -46,42 +46,75 @@
         <button class="hamburger" id="hamburger-btn"></button>
     </header>
     <main>
-        <div class="container-hero-image">
-            <h1><a href="join.html">Join Us</a></h1>
-            <div class="hero">
-                <picture>
-                    <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/hero-image-medium.webp" media="(min-width: 500px)">
-                    <img class="hero-img" src="images/hero-image-small.webp" alt="hero image" width="500" height="250"
-                        loading="lazy">
-                </picture>
+        <div class="join-page">
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Organization Title <input type="text" id="title" name="title" autocomplete="organization-title"
+                        pattern="[A-Za-z\- ]{7,}" title="Enter at least 7 letters, hyphens, or spaces only."
+                        required></label>
+                <label>Email <input type="email" name="email" required placeholder="example@gmail.com"
+                        title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="987-555-1234"></label>
+                <label>Name of Organization/Business<input type="text" required name="business"
+                        autocomplete="organization" title="Organization's name"></label>
+
+
+
+                <h3>Membership Level</h3>
+                <label>
+                    <select name="level" required>
+                        <option value="">Choose a level...</option>
+                        <option value="NP">NP (non profit) Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+
+
+                <h3>Descrption</h3>
+                <label><textarea name="description" rows="5" cols="40"
+                        placeholder="Type your description here..."></textarea>
+                </label>
+
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Become A Member">
+            </form>
+            <div class="membership-cards">
+                <h3>Membership levels</h3>
+                <div class="card-join">
+                    <h4>NP Membership</h4>
+                    <p>Free for non-profit organizations.</p>
+                    <a id="npModal" class="open-modal">Learn more</a>
+                </div>
+
+                <div class="card-join">
+                    <h4>Bronze Membership</h4>
+                    <p>Basic level with essential benefits.</p>
+                    <a id="bronzeModal" class="open-modal">Learn more</a>
+                </div>
+
+                <div class="card-join">
+                    <h4>Silver Membership</h4>
+                    <p>Middle level with more benefits.</p>
+                    <a id="silverModal" class="open-modal">Learn more</a>
+                </div>
+
+                <div class="card-join">
+                    <h4>Gold Membership</h4>
+                    <p>Higer level with sll the benefits.</p>
+                    <a id="goldModal" class="open-modal">Learn more</a>
+                </div>
             </div>
+
         </div>
-        <section class="home-container">
-            <h2>Home</h2>
-            <div class="home-sections">
-                <div>
-                    <h3>Events</h3>
-
-                </div>
-                <div>
-                    <h3>Current Weather</h3>
-                    <p>The current temperature in Xicohtzinco is <span id="current-temp"></span></p>
-                    <figure>
-                        <img id="weather-icon" src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-                <div>
-                    <h3>Weather Forcast</h3>
-                    <p><strong>Today:</strong><span id="today-forecast"></span></p>
-                    <p><strong>Tomorrow:</strong><span id="tomorrow-forecast"></span></p>
-                </div>
-            </div>
-            <h3 class="membersH1">Members</h3>
-            <div id="cards" class="grid-images"></div>
-        </section>
-
+        <dialog id="membership-details"></dialog>
     </main>
 
     <footer class="footer secondary-color">

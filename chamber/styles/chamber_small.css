@@ -278,3 +278,58 @@ main {
 .footer-icons a:hover {
     color: var(--accent1-color);
 }
+
+.membership-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.join-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.card-join {
+    background: #3333333f;
+    border-radius: 5px;
+    margin: 1rem 0;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 2s ease forwards;
+    border: 2px solid #726c722a;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-join h4 {
+    margin: 0;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.open-modal {
+    border: none;
+    text-align: center;
+    background-color: #1b2c57;
+    color: white;
+    border-radius: 15px;
+    padding: .4rem .7rem;
+    margin: 1rem 0;
+    -webkit-appearance: none;
+    appearance: none;
+    text-decoration: none;
+}
+
+.open-modal:hover {
+    background-color: #F2B632;
+    color: black;
+}
