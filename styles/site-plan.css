@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #ffc2da;
+    --secondary-color: #e0e5da;
+    --accent-color: #a17081;
+    --text-color: #524A3A;
+}
+
+body {
+    font-family: "Funnel Sans", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 2rem auto;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--accent-color);
+    font-family: "Cormorant Garamond", serif;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-left: 6px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: var(--accent-color);
+}
+
+code {
+    background-color: #f9f9f9;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
