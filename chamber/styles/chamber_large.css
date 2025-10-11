@@ -42,6 +42,7 @@
     .grid-images {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+        max-width: 900px;
     }
 
     .member-img {
@@ -55,6 +56,31 @@
         gap: 3rem;
         align-items: flex-start;
         margin: 0 3rem;
+    }
+
+    .item-img {
+        width: 15em;
+        height: 12em;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .item-img:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-items {
+        grid-template-areas:
+            "name"
+            "photograph"
+            "address"
+            "description"
+            "button";
+    }
+
+    #visit-message {
+        max-width: 900px;
     }
 
 }
@@ -106,10 +132,10 @@
 
     .grid-images {
         display: grid;
-        gap: 2rem;
+        gap: 1em;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
-
+        max-width: 1200px;
     }
 
     .member-img {
@@ -135,4 +161,41 @@
         align-items: flex-start;
         margin: 0 6rem;
     }
+
+
+    .learn-button {
+        height: 1.5rem;
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+        margin: 2em 2em;
+        font-size: 1.2rem;
+    }
+
+    .item-img {
+        width: 15em;
+        height: 12em;
+    }
+
+
+    .items-interest p {
+        margin: 1em 0;
+    }
+
+    .h1-discover {
+        padding: 0;
+    }
+
+    .card-items {
+        grid-template-areas:
+            "name"
+            "photograph"
+            "address"
+            "description"
+            "button";
+    }
+
+    #visit-message {
+        max-width: 1800px;
+    }
+
 }

@@ -242,7 +242,7 @@ main {
     gap: 1rem;
     grid-template-columns: 1fr;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 2rem;
     align-self: center;
     justify-self: center;
@@ -332,4 +332,88 @@ main {
 .open-modal:hover {
     background-color: #F2B632;
     color: black;
+}
+
+
+.card-items {
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "address"
+        "description"
+        "button";
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #726c722a;
+    padding: 2rem 1rem;
+    border-radius: 3%;
+    border: 1px solid #726c722a;
+}
+
+.learn-button {
+    grid-area: button;
+    border: none;
+    text-align: center;
+    background-color: #1b2c57;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.4rem 0;
+    margin: 1em 1em;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.learn-button:hover {
+    background-color: #F2B632;
+    color: #1b2c57;
+}
+
+figure {
+    width: 100%;
+    grid-area: photograph;
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    unicode-bidi: normal;
+}
+
+.item-img {
+    width: 18em;
+    height: 15em;
+    margin: 0 0;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.items-interest p {
+    grid-area: description;
+    text-align: justify;
+    margin: 2em 0;
+}
+
+.items-interest address {
+    grid-area: address;
+    text-align: justify;
+    margin: 2em 0;
+}
+
+.h1-discover {
+    grid-area: name;
+    text-align: center;
+    padding: 1em 0;
+}
+
+#visit-message {
+    background-color: #f0f8ff;
+    padding: 1rem;
+    margin: 3rem;
+    border: 1px solid #b0c4de;
+    border-radius: 5px;
+    max-width: 600px;
 }

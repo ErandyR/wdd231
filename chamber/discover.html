@@ -4,27 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Directory</title>
-    <meta name="description" content="Xicohtzinco, Tlaxcala local leaders chamber of commerce">
+    <title>Discover</title>
+    <meta name="description" content="Xicohtzinco, Tlaxcala local leaders chamber of commerce discover page">
     <meta name="author" content="Erandy Ramirez">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="icon" href="../favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber_small.css">
     <link rel="stylesheet" href="styles/chamber_large.css">
+
     <meta property="og:title" content="Chamber">
     <meta property="og:description"
         content="Xicohtzinco Tlaxcala chamber of commerce, where all local leaders support one another and support local commerce">
     <meta property="og:url" content="https://erandyr.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://github.com/ErandyR/wdd231/blob/main/chamber/images/logo.png" />
     <meta property="og:type" content="website">
+
     <script defer src="scripts/date.js"></script>
     <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/chamberce.js"></script>
+    <script defer src="scripts/discover.js"></script>
+    <script defer src="scripts/visit.js"></script>
 </head>
 
 <body>
@@ -32,11 +38,11 @@
         <div>
             <img class="logoImg" src="images/logo.png" alt="website logo">
         </div>
-        <p>Chamber of Commerce Directory</p>
+        <p>Chamber of Commerce - Discover Page</p>
         <nav>
             <ul id="nav-bar" class="navigation flex">
                 <li class="currentNav"><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html" target="_blank">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
@@ -44,8 +50,10 @@
         <button class="hamburger" id="hamburger-btn"></button>
     </header>
     <main>
-        <h1 class="membersH1">Members</h1>
-        <div id="cards" class="grid-images"></div>
+        <h1 class="h1-discover">Discover</h1>
+        <div id="visit-message"></div>
+        <div id="items-cards" class="grid-images items-interest"></div>
+
     </main>
 
     <footer class="footer secondary-color">
