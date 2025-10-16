@@ -11,7 +11,7 @@ function loadCarousel(startIndex) {
             `<figure>
                 <img class="items-images" src="${item.image}" alt="${item.alt}" loading="lazy">
                 <figcaption>
-                    <h4>${item.name}</h4>
+                    <h3>${item.name}</h3>
                     <p>${item.description}</p>
                     <p class="more-button"><a href="${item.page}">Learn more</a></p>
                 </figcaption>
