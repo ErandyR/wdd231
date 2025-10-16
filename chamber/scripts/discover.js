@@ -1,15 +1,9 @@
-const urlItems = 'data/items.json';
+// Import the module
+import { items } from '../data/items.mjs';
 
 const itemsCards = document.querySelector("#items-cards");
 
-async function getItemData() {
-    const response = await fetch(urlItems);
-    const data = await response.json();
-    displayItems(data.items);
-}
-
-getItemData();
-
+// Function that builds and displays all the cards
 const displayItems = (items) => {
     items.forEach((item) => {
         let card = document.createElement('div');
@@ -20,22 +14,22 @@ const displayItems = (items) => {
         let description = document.createElement('p');
         let learnMore = document.createElement('a');
 
-        title.textContent = `${item.title}`;
+        title.textContent = item.title;
         address.textContent = `Address: ${item.address}`;
         description.textContent = `Description: ${item.description}`;
-        learnMore.textContent = "Learn more..."
+        learnMore.textContent = "Learn more...";
 
         portrait.setAttribute('src', item.image);
         portrait.setAttribute('alt', `Portrait of ${item.title}`);
         portrait.setAttribute('loading', 'lazy');
-        figure.setAttribute('class', 'fig-img');
-        portrait.setAttribute('class', 'item-img');
-        learnMore.setAttribute('class', 'learn-button');
-        card.setAttribute('class', 'card-items')
 
+        figure.classList.add('fig-img');
+        portrait.classList.add('item-img');
+        learnMore.classList.add('learn-button');
+        card.classList.add('card-items');
 
         card.appendChild(title);
-        card.appendChild(figure)
+        card.appendChild(figure);
         figure.appendChild(portrait);
         card.appendChild(address);
         card.appendChild(description);
@@ -43,4 +37,7 @@ const displayItems = (items) => {
 
         itemsCards.appendChild(card);
     });
-}
+};
+
+// Call the display function right away
+displayItems(items);
