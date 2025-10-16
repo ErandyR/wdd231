@@ -213,6 +213,20 @@ nav ul {
     padding: .3em .9em;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .container-hero-image h2 a:hover {
@@ -491,4 +505,26 @@ dialog h2 {
 
 dialog h3 {
     font-size: 1.5em;
+}
+
+.video-link {
+    text-decoration: none;
+    text-align: center;
+    background-color: #647564b8;
+    color: white;
+    border-radius: 10px;
+    padding: .4rem 1.5rem;
+    margin-top: 3em;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    border: solid 2px var(--primary-color);
+}
+
+.video-link:hover {
+    background-color: var(--text-color);
+    color: white;
+    box-shadow: 0 2px 5px var(--text-color);
+    border: solid 2px var(--text-color);
+    cursor: pointer;
 }
