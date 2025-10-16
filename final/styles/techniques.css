@@ -34,7 +34,7 @@
     align-self: flex-end;
     margin-top: 0.75rem;
     padding: 0.5rem 1rem;
-    background-color: #916172af;
+    background-color: var(--accent-color);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -43,7 +43,7 @@
 }
 
 .techniques-button:hover {
-    background-color: #916172;
+    background-color: var(--text-color);
 }
 
 .quotes-section {

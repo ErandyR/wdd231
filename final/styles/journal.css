@@ -24,7 +24,7 @@ h2 {
 }
 
 .topic-button {
-    background: #916172b9;
+    background: #916172;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -32,12 +32,13 @@ h2 {
     text-align: center;
     padding: .5em 1em;
     border-radius: 8px;
-    border: solid 1px #916172ce;
+    border: solid 1px #916172;
     margin: .5em 0;
 }
 
 .topic-button:hover {
-    background-color: #916172;
+    background-color: #647564;
+    border: solid 1px #647564;
 }
 
 .prompts {
@@ -55,7 +56,7 @@ h2 {
     position: absolute;
     top: 14em;
     right: 10%;
-    background: #647564ae;
+    background: #647564;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -63,13 +64,13 @@ h2 {
     text-align: center;
     padding: .5em 1em;
     border-radius: 8px;
-    border: solid 1px #647564d6;
+    border: solid 1px #647564;
     margin: .1em;
 }
 
 #viewBtn:hover {
-    background-color: #647564;
-    border: solid 1px #647564;
+    background-color: #524A3A;
+    border: solid 1px #524A3A;
 }
 
 .mindful-section {
@@ -154,7 +155,7 @@ h2 {
 .open-modal-btn {
     margin-top: 0.75rem;
     padding: 0.5rem 1rem;
-    background-color: #91617293;
+    background-color: #916172;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -163,7 +164,7 @@ h2 {
 }
 
 .open-modal-btn:hover {
-    background-color: #916172;
+    background-color: #524A3A;
 }
 
 
