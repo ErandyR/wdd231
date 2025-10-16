@@ -14,17 +14,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" blocking="render">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/wellness_small.css">
-    <link rel="stylesheet" href="styles/wellness_large.css">
+    <link rel="stylesheet" href="styles/normalize.css" blocking="render">
+    <link rel="stylesheet" href="styles/wellness_small.css" blocking="render">
+    <link rel="stylesheet" href="styles/wellness_large.css" blocking="render">
 
     <meta property="og:title" content="Wellness">
     <meta property="og:description" content="Wellness Hub">
     <meta property="og:url" content="https://erandyr.github.io/wdd231/final/index.html">
     <meta property="og:image" content="https://erandyr.github.io/wdd231/final/images/logo-nanyswellness.webp" />
     <meta property="og:type" content="website">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/date.js"></script>
@@ -39,12 +43,13 @@
         </div>
         <nav>
             <ul id="nav-bar" class="navigation flex">
-                <li class="currentNav"><a href="index.html">Home</a></li>
-                <li><a href="journal.html">Journal</a></li>
-                <li><a href="breathing-techniques.html">Techniques</a></li>
+                <li class="currentNav"><a href="index.html" aria-label="Menu link to Home page">Home</a></li>
+                <li><a href="journal.html" aria-label="Menu link to Journal page">Journal</a></li>
+                <li><a href="breathing-techniques.html"
+                        aria-label="Menu link to Breathing techniques page">Techniques</a></li>
             </ul>
         </nav>
-        <button class="hamburger" id="hamburger-btn"></button>
+        <button class="hamburger" aria-label="menu button" id="hamburger-btn"></button>
     </header>
     <main>
         <div class="container-hero-image">
@@ -55,7 +60,7 @@
                     <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
                     <source srcset="images/hero-image-medium.webp" media="(min-width: 500px)">
                     <img class="hero-img" src="images/hero-image-small.webp" alt="hero image" width="500"
-                        loading="lazy">
+                        fetchpriority="high" loading="eager" decoding="async">
                 </picture>
             </div>
         </div>
