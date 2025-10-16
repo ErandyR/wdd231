@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #647564;
+    --secondary-color: #fffcf4;
+    --accent-color: #916172;
+    --text-color: #524A3A;
+
+    --heading-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Funnel Sans', sans-serif;
+
+    --nav-background-color: #fbf4e8;
+}
+
+.techniques-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    max-width: 50em;
+    margin: .5em;
+}
+
+.techniques-container section {
+    display: flex;
+    flex-direction: column;
+}
+
+.techniques-container h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.techniques-button {
+    width: 10em;
+    align-self: flex-end;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #916172af;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.techniques-button:hover {
+    background-color: #916172;
+}
+
+.quotes-section {
+    background-color: var(--nav-background-color);
+    padding: 4rem 0;
+}
+
+.quote-container {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 2rem auto;
+    max-width: 600px;
+    transition: opacity 0.8s ease-in-out;
+}
+
+#quote-text {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+#quote-author {
+    font-weight: bold;
+    color: #555;
+}

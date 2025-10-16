@@ -1,0 +1,183 @@
+h1,
+h2 {
+    text-align: center;
+}
+
+.prompt-cards-container {
+    display: flex;
+    column-gap: 6em;
+    padding: 3em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.prompt-cards-container section {
+    width: 25rem;
+}
+
+.topic-h3 {
+    font-size: 1.5em;
+}
+
+.container-answerButton {
+    text-align: right;
+}
+
+.topic-button {
+    background: #916172b9;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    padding: .5em 1em;
+    border-radius: 8px;
+    border: solid 1px #916172ce;
+    margin: .5em 0;
+}
+
+.topic-button:hover {
+    background-color: #916172;
+}
+
+.prompts {
+    cursor: pointer;
+}
+
+.prompts:hover {
+    color: #000;
+    font-weight: 600;
+}
+
+/* My responses button's styles*/
+
+#viewBtn {
+    position: absolute;
+    top: 14em;
+    right: 10%;
+    background: #647564ae;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+    padding: .5em 1em;
+    border-radius: 8px;
+    border: solid 1px #647564d6;
+    margin: .1em;
+}
+
+#viewBtn:hover {
+    background-color: #647564;
+    border: solid 1px #647564;
+}
+
+.mindful-section {
+    background-color: #f6f5f2;
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mindful-text {
+    background-color: #ffffff;
+    color: #333;
+    max-width: 800px;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    line-height: 1.8;
+}
+
+.mindful-text h2 {
+    text-align: center;
+    color: #4a593d;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.mindful-text p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.mindful-text em {
+    color: #7d8c69;
+    font-style: italic;
+}
+
+.mindful-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.mindful-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* movement styles */
+
+.movement-h2 {
+    text-align: center;
+    color: #4a593d;
+    margin: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.mindful-figure {
+    text-align: center;
+    background-color: #f9fafb;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.mindful-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mindful-figure figcaption {
+    margin-top: 0.75rem;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.open-modal-btn {
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #91617293;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.open-modal-btn:hover {
+    background-color: #916172;
+}
+
+
+@media (min-width: 700px) {
+    .mindful-figure {
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+
+    .mindful-figure figure {
+        display: inline-block;
+        max-width: 300px;
+        margin: 4em;
+    }
+
+}
