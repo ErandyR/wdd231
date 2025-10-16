@@ -105,8 +105,13 @@
 
 
     .hero img {
+        top: 0;
         left: 0;
         width: 100%;
+    }
+
+    figure {
+        margin: 2em
     }
 
     .container-hero-image h1 {
@@ -174,6 +179,16 @@
     .container-hero-image h2 a {
         font-size: 1.5em;
         padding: 15px 30px;
+    }
+
+    .hero img {
+        top: -100px;
+        left: 0;
+        width: 100%;
+    }
+
+    figure {
+        margin: 4em
     }
 
     /* Corousel styles */

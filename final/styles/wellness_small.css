@@ -176,7 +176,7 @@ nav ul {
 
 .hero img {
     position: absolute;
-    bottom: 1;
+    bottom: 0;
     left: 0;
     width: 100%;
 }
@@ -214,7 +214,7 @@ nav ul {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    animation: fadeIn 0.5s forwards;
+    animation: fadeIn 1s forwards;
 }
 
 @keyframes fadeIn {
